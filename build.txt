@@ -1,0 +1,11 @@
+﻿author = Gargule
+version = 0.0.1
+displayName = Some Shift
+hideCode = false
+hideResources = false
+includeSource = false
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB = true
+weakReferences = CalamityMod
+homepage = https://discord.gg/RDH97vQ
+side = Both
