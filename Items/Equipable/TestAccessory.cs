@@ -10,8 +10,6 @@ namespace SomeShift.Items.Equipable
     public class TestAccessory : ModItem
     {
         static Mod Calamity = ModLoader.GetMod("CalamityMod");
-        static ModItem LocalItem = Calamity.GetItem("SirenHeart");
-        static ModItem LocalItem2;
 
         public override void SetStaticDefaults()
         {
@@ -21,14 +19,16 @@ namespace SomeShift.Items.Equipable
 
         public override void SetDefaults()
         {
-            item.
+            item.CloneDefaults(Calamity.ItemType("LeviathanAmbergris"));
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             if (Calamity != null)
             {
-                LocalItem.UpdateAccessory(player, hideVisual);
+                ModItem LocalItem1 = Calamity.GetItem("SirensHeart");
+                ModItem LocalItem2 = Calamity.GetItem("LeviathanAmbergris");
+                LocalItem1.UpdateAccessory(player, hideVisual);
                 LocalItem2.UpdateAccessory(player, hideVisual);
             }
         }

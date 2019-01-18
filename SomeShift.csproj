@@ -86,6 +86,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buffs\Sprayer.cs" />
+    <Compile Include="Items\Equipable\SirensLeviHeartAlt.cs" />
+    <Compile Include="Items\Equipable\SirensLeviHeart.cs" />
     <Compile Include="Items\Equipable\TestAccessory.cs" />
     <Compile Include="SomeShiftNPCPlayer.cs" />
     <Compile Include="Items\Misc\WaterSprayer.cs" />
@@ -101,6 +103,8 @@
     <Content Include="Buffs\Sprayer.png" />
     <Content Include="build.txt" />
     <Content Include="description.txt" />
+    <Content Include="Items\Equipable\SirensLeviHeartAlt.png" />
+    <Content Include="Items\Equipable\SirensLeviHeart.png" />
     <Content Include="Items\Equipable\TestAccessory.png" />
     <Content Include="Items\Misc\WaterSprayer.png" />
     <Content Include="Items\Placeable\SirenBattleMusicBox.png" />

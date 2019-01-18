@@ -1,7 +1,10 @@
 ﻿I just try to some C#
+Now it looks like addon for Calamity...
 
 v0.0
 	Added Music Boxes for Siren from Calamity Mod (Three variations)
 
 v0.0.1
 	Added recipe for Siren's Warcry box (Because it is utobtainable in revengeance mode. Or death mode. I forgot.)
+v0.0.2
+	Added modifying to Siren's Heart from Calamity. Also added Water sprayer, but it haven't any sprite or craft and still unobtainable
