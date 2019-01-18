@@ -10,3 +10,5 @@ v0.0.2
 	Added modifying to Siren's Heart from Calamity. Also added Water sprayer, but it haven't any sprite or craft and still unobtainable
 v0.0.2.1 [HOTFIX]
 	Fabsol just split Calamity into two mods. Then, i fix troubles.
+v0.0.3
+	CatGame bringed some sprites
