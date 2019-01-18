@@ -17,7 +17,7 @@ namespace SomeShift
 
         public override void Load()
         {
-            Mod Calamity = ModLoader.GetMod("CalamityMusic");
+            Mod Calamity = ModLoader.GetMod("CalamityModMusic");
             if (!Main.dedServ) //Как я понял, это определяет, являемся ли мы выделенным сервером, чтобы снизить нагрузку в случае если являемся
             {
                 if (Calamity != null)
