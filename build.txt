@@ -6,6 +6,6 @@ hideResources = false
 includeSource = false
 buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
 includePDB = false
-weakReferences = CalamityMod
+weakReferences = CalamityMod, CalamityModMusic
 homepage = https://discord.gg/RDH97vQ
 side = Both
