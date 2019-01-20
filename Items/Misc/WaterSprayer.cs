@@ -1,6 +1,7 @@
 ﻿using Terraria.ModLoader;
 using Terraria.Localization;
 using Terraria;
+using Terraria.ID;
 
 namespace SomeShift.Items.Misc
 {
@@ -25,6 +26,14 @@ namespace SomeShift.Items.Misc
         public override void UpdateInventory(Player player)
         {
             player.AddBuff(mod.BuffType("Sprayer"), 60); //Технически, любой аксесуар может работать из инвентаря, если немного поковырять его код, как видно отсюда
+        }
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.WaterBucket);
+            recipe.AddIngredient(ItemID.MetalSink); //Сделано жопой, переделать через крафтовый группы
+            recipe.AddIngredient(ItemID.OutletPump);
+            recipe.AddRecipe();
         }
     }
 }

@@ -19,3 +19,5 @@ v0.0.2.1 [HOTFIX]
 	Fabsol just split Calamity into two mods. Then, i fix troubles.
 v0.0.3
 	CatGame bringed some sprites
+v0.0.4
+	Added recipe for Water Sprayer
