@@ -31,8 +31,9 @@ namespace SomeShift.Items.Misc
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.WaterBucket);
-            recipe.AddIngredient(ItemID.MetalSink); //Сделано жопой, переделать через крафтовый группы
+            recipe.AddIngredient(ItemID.MetalSink); //Сделано жопой, переделать через крафтовые группы
             recipe.AddIngredient(ItemID.OutletPump);
+            recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
