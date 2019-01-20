@@ -33,6 +33,7 @@ namespace SomeShift.Items.Misc
             recipe.AddIngredient(ItemID.WaterBucket);
             recipe.AddIngredient(ItemID.MetalSink); //Сделано жопой, переделать через крафтовый группы
             recipe.AddIngredient(ItemID.OutletPump);
+            recipe.SetResult(this);
             recipe.AddRecipe();
         }
     }
