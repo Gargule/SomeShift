@@ -7,17 +7,13 @@ namespace SomeShift.Items.Equipable
 {
     public class SirensLeviHeart : ModItem
     {
-        static Mod Calamity = ModLoader.GetMod("CalamityMod");
-        static ModItem LocalItem1 = Calamity.GetItem("SirensHeart");
-        static ModItem LocalItem2 = Calamity.GetItem("LeviathanAmbergris");
+        protected static Mod Calamity = ModLoader.GetMod("CalamityMod");
+        protected static ModItem LocalItem1 = Calamity.GetItem("SirensHeart");
+        protected static ModItem LocalItem2 = Calamity.GetItem("LeviathanAmbergris");
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Wet Siren's heart (Blue)");
-            Tooltip.SetDefault("Have all abilities from Siren's heart and Leviathan Ambergris");
-
-            DisplayName.AddTranslation(GameCulture.Russian, "Истинное сердце Сирены (Синее)");
-            Tooltip.AddTranslation(GameCulture.Russian, "Имеет все возможности Сердца Сирены и Амбры Левиафана");
+            // Он пуст, т.к. данный метод всегда переопределяется в потомках.
         }
 
         public override void SetDefaults()

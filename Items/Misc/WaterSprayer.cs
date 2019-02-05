@@ -25,13 +25,15 @@ namespace SomeShift.Items.Misc
 
         public override void UpdateInventory(Player player)
         {
-            player.AddBuff(mod.BuffType("Sprayer"), 60); //Технически, любой аксесуар может работать из инвентаря, если немного поковырять его код, как видно отсюда
+            //Технически, любой аксесуар может работать из инвентаря, если немного поковырять его код, как видно отсюда
+            player.AddBuff(mod.BuffType("Sprayer"), 60); 
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.WaterBucket);
-            recipe.AddIngredient(ItemID.MetalSink); //Сделано жопой, переделать через крафтовый группы
+            //Сделано жопой, переделать через крафтовый группы
+            recipe.AddIngredient(ItemID.MetalSink); 
             recipe.AddIngredient(ItemID.OutletPump);
             recipe.SetResult(this);
             recipe.AddRecipe();
