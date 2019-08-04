@@ -74,45 +74,47 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Xna.Framework" />
     <Reference Include="Microsoft.Xna.Framework.Game" />
     <Reference Include="Microsoft.Xna.Framework.Graphics" />
     <Reference Include="ReLogic">
       <HintPath>..\..\DLLs for modding\ReLogic.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="Terraria">
       <HintPath>E:\Steam\steamapps\common\Terraria\Terraria.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buffs\EpicBuff.cs" />
     <Compile Include="Buffs\Sprayer.cs" />
     <Compile Include="Items\Equipable\SirensLeviHeartAlt.cs" />
     <Compile Include="Items\Equipable\SirensLeviHeart.cs" />
     <Compile Include="Items\Equipable\TestAccessory.cs" />
+    <Compile Include="Items\Misc\Epic.cs" />
+    <Compile Include="Items\Weapons\Poles\WoodenPole.cs" />
+    <Compile Include="Projectiles\PoleProjectile.cs" />
     <Compile Include="SomeShiftNPCPlayer.cs" />
     <Compile Include="Items\Misc\WaterSprayer.cs" />
-    <Compile Include="Items\Placeable\SirenBattleMusicBox.cs" />
-    <Compile Include="Items\Placeable\SirenLeviMusicBox.cs" />
-    <Compile Include="Items\Placeable\SirenMusicBox.cs" />
     <Compile Include="SomeShift.cs" />
-    <Compile Include="Tiles\SirenBattleMusicBox.cs" />
-    <Compile Include="Tiles\SirenLeviMusicBox.cs" />
-    <Compile Include="Tiles\SirenMusicBox.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Buffs\Sprayer.png" />
+    <Content Include="Buffs\EpicBuff.png" />
     <Content Include="build.txt" />
     <Content Include="description.txt" />
     <Content Include="Items\Equipable\SirensLeviHeartAlt.png" />
     <Content Include="Items\Equipable\SirensLeviHeart.png" />
     <Content Include="Items\Equipable\TestAccessory.png" />
+    <Content Include="Items\Misc\Epic.png" />
     <Content Include="Items\Misc\WaterSprayer.png" />
-    <Content Include="Items\Placeable\SirenBattleMusicBox.png" />
-    <Content Include="Items\Placeable\SirenLeviMusicBox.png" />
-    <Content Include="Items\Placeable\SirenMusicBox.png" />
-    <Content Include="Tiles\SirenBattleMusicBox.png" />
-    <Content Include="Tiles\SirenLeviMusicBox.png" />
-    <Content Include="Tiles\SirenMusicBox.png" />
+    <Content Include="Items\Weapons\Poles\WoodenPole.png" />
+    <Content Include="Projectiles\PoleProjectile.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -127,7 +129,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Items\Placeable\" />
     <Folder Include="Sounds\Music\" />
+    <Folder Include="Tiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

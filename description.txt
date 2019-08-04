@@ -21,5 +21,5 @@ v0.0.3
 	CatGame bringed some sprites
 v0.0.4
 	Added recipe for Water Sprayer
-vNEXT
-	Fixed recipe for Water Sprayer
+v0.0.5
+	Updated, finaly. Music boxes removed, cuz now it's existing in Calamity
